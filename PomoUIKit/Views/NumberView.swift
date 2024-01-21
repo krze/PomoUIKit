@@ -1,11 +1,16 @@
 import UIKit
 
 final class NumberView: UIView {
+    private var numberLabel: UILabel?
     
     init(number: Int) {
         super.init(frame: .zero)
         backgroundColor = .tomato
         createSubviews(with: number)
+    }
+    
+    func updateNumber(number: Int) {
+        numberLabel?.text = "\(number)"
     }
     
     private func createSubviews(with number: Int) {
@@ -35,6 +40,7 @@ final class NumberView: UIView {
             numberLabel.bottomAnchor.constraint(equalTo: notch.topAnchor, constant: -12),
             numberLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
+        self.numberLabel = numberLabel
     }
     
     required init?(coder: NSCoder) {

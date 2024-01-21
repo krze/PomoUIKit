@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D29C69B2B5DA737007E8585 /* NumberViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D29C69A2B5DA737007E8585 /* NumberViewCell.swift */; };
 		9DC67D582B5D9363003EFB68 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC67D572B5D9363003EFB68 /* AppDelegate.swift */; };
 		9DC67D5A2B5D9363003EFB68 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC67D592B5D9363003EFB68 /* SceneDelegate.swift */; };
 		9DC67D5C2B5D9363003EFB68 /* PomoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DC67D5B2B5D9363003EFB68 /* PomoViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D29C69A2B5DA737007E8585 /* NumberViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberViewCell.swift; sourceTree = "<group>"; };
 		9DC67D542B5D9363003EFB68 /* PomoUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PomoUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DC67D572B5D9363003EFB68 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DC67D592B5D9363003EFB68 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 			children = (
 				9DC67D5B2B5D9363003EFB68 /* PomoViewController.swift */,
 				9DC67D6C2B5D9646003EFB68 /* NumberView.swift */,
+				9D29C69A2B5DA737007E8585 /* NumberViewCell.swift */,
 				9DC67D732B5D9F13003EFB68 /* PomoTopView.swift */,
 				9DC67D752B5D9F2C003EFB68 /* PomoBottomView.swift */,
 			);
@@ -165,6 +168,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D29C69B2B5DA737007E8585 /* NumberViewCell.swift in Sources */,
 				9DC67D5C2B5D9363003EFB68 /* PomoViewController.swift in Sources */,
 				9DC67D582B5D9363003EFB68 /* AppDelegate.swift in Sources */,
 				9DC67D762B5D9F2C003EFB68 /* PomoBottomView.swift in Sources */,

@@ -2,20 +2,24 @@ import UIKit
 
 final class PomoTopView: UIView {
     
+    let timerCollectionView: UICollectionView
+    
     init() {
+        let timerFlowLayout = UICollectionViewFlowLayout()
+        timerFlowLayout.scrollDirection = .horizontal
+        timerFlowLayout.itemSize = CGSize(width: 60, height: 60)
+        
+        timerCollectionView = UICollectionView(frame: .zero, collectionViewLayout: timerFlowLayout)
+        
         super.init(frame: .zero)
-        
-        // debug static for now
-        let numberView = NumberView(number: 0)
-        numberView.translatesAutoresizingMaskIntoConstraints = false
-        
-        addSubview(numberView)
+
+        addSubview(timerCollectionView)
         
         NSLayoutConstraint.activate([
-            numberView.widthAnchor.constraint(equalToConstant: 60),
-            numberView.heightAnchor.constraint(equalToConstant: 60),
-            numberView.centerXAnchor.constraint(equalTo: centerXAnchor),
-            numberView.bottomAnchor.constraint(equalTo: bottomAnchor),
+            timerCollectionView.leadingAnchor.constraint(equalTo: leadingAnchor),
+            timerCollectionView.trailingAnchor.constraint(equalTo: trailingAnchor),
+            timerCollectionView.heightAnchor.constraint(equalToConstant: 60),
+            timerCollectionView.bottomAnchor.constraint(equalTo: bottomAnchor),
         ])
     }
     
