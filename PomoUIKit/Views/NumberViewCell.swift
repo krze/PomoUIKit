@@ -1,12 +1,14 @@
 import UIKit
 
 final class NumberViewCell: UICollectionViewCell {
+    static let size = CGSize(width: 60, height: 64)
     static let identifier = "NumberViewCell"
+    private (set) var number: Int = 0
     private var numberView: NumberView?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-        let numberView = NumberView(number: 0)
+        let numberView = NumberView(number: number)
         numberView.translatesAutoresizingMaskIntoConstraints = false
         contentView.addSubview(numberView)
         NSLayoutConstraint.activate([
@@ -24,5 +26,6 @@ final class NumberViewCell: UICollectionViewCell {
     
     func setup(number: Int) {
         numberView?.updateNumber(number: number)
+        self.number = number
     }
 }

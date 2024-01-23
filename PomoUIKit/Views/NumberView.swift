@@ -22,9 +22,9 @@ final class NumberView: UIView {
         
         NSLayoutConstraint.activate([
             notch.centerXAnchor.constraint(equalTo: centerXAnchor),
-            notch.topAnchor.constraint(equalTo: centerYAnchor),
             notch.bottomAnchor.constraint(equalTo: bottomAnchor),
             notch.widthAnchor.constraint(equalToConstant: 4),
+            notch.heightAnchor.constraint(equalToConstant: 30)
         ])
         
         let numberLabel = UILabel()
@@ -37,7 +37,7 @@ final class NumberView: UIView {
         addSubview(numberLabel)
         
         NSLayoutConstraint.activate([
-            numberLabel.bottomAnchor.constraint(equalTo: notch.topAnchor, constant: -12),
+            numberLabel.bottomAnchor.constraint(equalTo: notch.topAnchor, constant: -4),
             numberLabel.centerXAnchor.constraint(equalTo: centerXAnchor),
         ])
         self.numberLabel = numberLabel

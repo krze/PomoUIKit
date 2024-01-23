@@ -7,11 +7,15 @@ final class PomoTopView: UIView {
     init() {
         let timerFlowLayout = UICollectionViewFlowLayout()
         timerFlowLayout.scrollDirection = .horizontal
-        timerFlowLayout.itemSize = CGSize(width: 60, height: 60)
         
         timerCollectionView = UICollectionView(frame: .zero, collectionViewLayout: timerFlowLayout)
         
         super.init(frame: .zero)
+        
+        timerCollectionView.translatesAutoresizingMaskIntoConstraints = false
+        timerCollectionView.register(NumberViewCell.self, forCellWithReuseIdentifier: NumberViewCell.identifier)
+        timerCollectionView.backgroundColor = .tomato
+        timerCollectionView.showsHorizontalScrollIndicator = false
 
         addSubview(timerCollectionView)
         
